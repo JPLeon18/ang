@@ -1,6 +1,48 @@
-<ul>
-  <li>juan</li>
-  <li>leon</li>
-  <li>mera</li>
-</ul>
+<h1>trabajador del mes</h1>
+
+<div  *ngIf="trabajador_ext == true">
+  <button (click)="cambiarExterno(false)">Mostrar empleado</button>
+  <ul>
+    <li>{{trabajadores[1].nombre}}</li>
+    <li>{{trabajadores[1].edad}}</li>
+    <li>{{trabajadores[1].cargo}}</li>
+    <li *ngIf="trabajadores[1].contratado == true">Contratado</li>
+    <li *ngIf="trabajadores[1].contratado == false">No Contratado</li>
+  </ul>
+</div>
+
+<div  *ngIf="trabajador_ext == false">
+  <button (click)="cambiarExterno(true)">Mostrar trabajador</button>
+  <ul>
+    <li>{{empleado.nombre}}</li>
+    <li>{{empleado.edad}}</li>
+    <li>{{empleado.cargo}}</li>
+    <li *ngIf="empleado.contratado == true">Contratado</li>
+    <li *ngIf="empleado.contratado == false">No Contratado</li>
+  </ul>
+</div>
+
+
+<div>
+
+  <ul *ngFor="let trabajador of trabajadores; let i = index">
+    <li><strong>Empleado {{i+1}}</strong>
+      <ul>
+        <li>{{trabajador.nombre}}</li>
+        <li>{{trabajador.edad}}</li>
+        <li>{{trabajador.cargo}}</li>
+        <li *ngIf="trabajador.contratado == true">Contratado</li>
+        <li *ngIf="trabajador.contratado == false">No Contratado</li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+
 <hr>
+
+
+<h3>colores</h3>
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="red" [ngStyle]="{'background-color':'color'}">Es de color rojo</li>
+</ul>

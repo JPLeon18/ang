@@ -44,5 +44,7 @@
 
 <h3>colores</h3>
 <ul [ngSwitch]="color">
-  <li *ngSwitchCase="red" [ngStyle]="{'background-color':'color'}">Es de color rojo</li>
+  <li *ngSwitchCase="'red'" [ngStyle]="{'background':color, 'color':'white'}">Es de color rojo</li>
+  <li *ngSwitchCase="'green'" [ngStyle]="{'background':color, 'color':'white'}">Es de color rojo</li>
+  <li *ngSwitchCase="'blue'" [ngStyle]="{'background':color, 'color':'white'}">Es de color rojo</li>
 </ul>

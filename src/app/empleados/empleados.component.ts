@@ -10,6 +10,7 @@ export class EmpleadosComponent implements OnInit {
   public empleado:Empleado;
   public trabajadores:Array<any>;
   public trabajador_ext:boolean;
+  public color:string
 
 
   constructor() {
@@ -22,6 +23,7 @@ export class EmpleadosComponent implements OnInit {
     ];
 
     this.trabajador_ext = false;
+    this.color = "green";
   }
 
   ngOnInit() {

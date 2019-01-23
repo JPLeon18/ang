@@ -1,3 +1,20 @@
+<input type="text" [(ngModel)]="color_select">
+
+<p [style.border]="color_select == 'red' ? '5px solid red': '5px solid black'"
+[ngClass]="{
+  bordeAzul: color_select == 'blue',
+  bordeVerde: color_select == 'green'
+
+}"
+
+>{{color_select}}</p>
+
+<div [ngStyle]="{'background': color_select,
+                'width':'200px', 'height':'200px',
+                'float':'right', 'margin-right':'69%'}"></div>
+
+<div [ngStyle]="{'clear':'both'}"></div>
+<hr>
 <h1>trabajador del mes</h1>
 
 <div  *ngIf="trabajador_ext == true">

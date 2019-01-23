@@ -1,0 +1,11 @@
+.bordeAzul{
+  border: 5px solid blue !important;
+}
+
+.bordeVerde{
+  border: 5px solid green !important;
+}
+
+.menu{
+  background: blue;
+}

@@ -1,6 +1,14 @@
-  <h1>
-   {{ title }}!
-  </h1>
-<app-fruta></app-fruta>
-<app-empleados></app-empleados>
+<h3>{{title}}</h3>
+<hr>
+<a [ngClass]=['menu'];  [routerLink]="['/inicio']">Home</a>
+<a [routerLink]="['/empleado']">Empleado</a>
+<a [routerLink]="['/fruta']">Fruta</a>
+<a [routerLink]="['/contacto']">Contacto</a>
+
+
+<hr>
+
+<router-outlet></router-outlet>
+
+
 

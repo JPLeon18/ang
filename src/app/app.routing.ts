@@ -13,6 +13,7 @@ const appRoutes:Routes = [
   {path: 'fruta', component: FrutaComponent},
   {path: 'empleado', component: EmpleadosComponent},
   {path: 'contacto', component: ContactoComponent},
+  {path: 'contacto/:page', component: ContactoComponent},
 
   // Ruta vacia o error 404
   {path: '', component: InicioComponent},

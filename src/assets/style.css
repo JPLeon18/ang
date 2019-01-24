@@ -21,4 +21,12 @@
 .menu:hover{
   background: white;
   color: #117a8b;
+  transition: 300ms;
 }
+
+.active{
+  background: white;
+  color: #117a8b;
+}
+
+

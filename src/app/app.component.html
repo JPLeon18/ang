@@ -1,13 +1,15 @@
 <h3>{{title}}</h3>
-<hr>
+
 <div [ngClass]="'divMenu'">
-<strong><a [ngClass]="'menu'" [routerLink]="['/inicio']">Home</a></strong>
-<strong><a [ngClass]="'menu'" [routerLink]="['/empleado']">Empleado</a></strong>
-<strong><a [ngClass]="'menu'" [routerLink]="['/fruta']">Fruta</a></strong>
-<strong><a [ngClass]="'menu'" [routerLink]="['/contacto']">Contacto</a></strong>
+<strong><a [routerLinkActive]="['active']" [ngClass]="'menu'" [routerLink]="['/inicio']">Home</a></strong>
+<strong><a [routerLinkActive]="['active']" [ngClass]="'menu'" [routerLink]="['/empleado']">Empleado</a></strong>
+<strong><a [routerLinkActive]="['active']" [ngClass]="'menu'" [routerLink]="['/fruta']">Fruta</a></strong>
+<strong><a [routerLinkActive]="['active']" [ngClass]="'menu'" [routerLink]="['/contacto']">Contacto</a></strong>
 </div>
 
-<hr>
+<br>
+<br>
+
 
 <router-outlet></router-outlet>
 

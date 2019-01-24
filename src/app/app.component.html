@@ -1,10 +1,11 @@
 <h3>{{title}}</h3>
 <hr>
-<a [ngClass]=['menu'];  [routerLink]="['/inicio']">Home</a>
-<a [routerLink]="['/empleado']">Empleado</a>
-<a [routerLink]="['/fruta']">Fruta</a>
-<a [routerLink]="['/contacto']">Contacto</a>
-
+<div [ngClass]="'divMenu'">
+<strong><a [ngClass]="'menu'" [routerLink]="['/inicio']">Home</a></strong>
+<strong><a [ngClass]="'menu'" [routerLink]="['/empleado']">Empleado</a></strong>
+<strong><a [ngClass]="'menu'" [routerLink]="['/fruta']">Fruta</a></strong>
+<strong><a [ngClass]="'menu'" [routerLink]="['/contacto']">Contacto</a></strong>
+</div>
 
 <hr>
 

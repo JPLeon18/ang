@@ -7,5 +7,18 @@
 }
 
 .menu{
-  background: blue;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.divMenu{
+  background: #117a8b;
+  padding: 5px;
+}
+
+.menu:hover{
+  background: white;
+  color: #117a8b;
 }

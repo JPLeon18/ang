@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core'; // [ngModel]
+import { FormsModule } from "@angular/forms"; // [ngModule]
 import { HttpModule } from "@angular/http";
-import { routing, appRoutingProviders} from "./app.routing";
+
+import { routing, appRoutingProviders} from "./app.routing"; // Rutas del App.Routing.ts
 
 
 import { AppComponent } from './app.component';

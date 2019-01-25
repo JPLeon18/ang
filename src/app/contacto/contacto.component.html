@@ -1,1 +1,14 @@
 <p>{{title}}</p>
+
+
+<div *ngIf="parametro">
+  El parametro es {{parametro}}
+</div>
+
+<div *ngIf="!parametro">
+  <input type="text" [(ngModel)]="address">
+  <button (click)="redirigir()">Ir a Contacto</button>
+  <button (click)="irHome()">Ir a la Home</button>
+</div>
+
+

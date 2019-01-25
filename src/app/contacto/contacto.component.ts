@@ -9,7 +9,7 @@ import { Router, ActivatedRoute, Params } from "@angular/router";  // Recoger pa
 export class ContactoComponent implements OnInit {
   public title:string;
   public parametro;
-
+  public address:any;
 
 
   constructor(
@@ -18,14 +18,23 @@ export class ContactoComponent implements OnInit {
 
   ) {
     this.title="Pagina de Contacto";
-
+    this.address = "";
   }
 
   ngOnInit() {
     this._route.params.forEach((params: Params) => {
-      this.parametro = params['page'];
+    this.parametro = params['page'];
     });
 
   }
 
+
+
+  redirigir(){
+    this._router.navigate(['/contacto', this.address]);
+  }
+
+  irHome(){
+    this._router.navigate(['']);
+  }
 }

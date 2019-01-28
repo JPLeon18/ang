@@ -13,8 +13,18 @@ export class RopaService{
     return name;
   }
 
-  addRopa(nombre_prenda){
+  addRopa(nombre_prenda:string):Array<string>{
     this.coleccion_ropa.push(nombre_prenda);
+    return this.getRopa();
+  }
+
+  getRopa(){
+    return this.coleccion_ropa;
+  }
+
+  deleteRopa(index){
+    this.coleccion_ropa.splice(index, 1);
+    return this.getRopa();
   }
 
 }

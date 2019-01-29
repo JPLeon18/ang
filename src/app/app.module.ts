@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core'; // [ngModel]
 import { FormsModule } from "@angular/forms"; // [ngModule]
 import { HttpModule } from "@angular/http";
 
+
 import { routing, appRoutingProviders} from "./app.routing"; // Rutas del App.Routing.ts
 
 
@@ -11,7 +12,8 @@ import { FrutaComponent } from './fruta/fruta.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
-
+import { ConversorPipe } from "./pipe/conversor.pipe";
+import { CochesComponent } from './coches/coches.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     FrutaComponent,
     EmpleadosComponent,
     InicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    ConversorPipe,
+    CochesComponent
   ],
   imports: [
     BrowserModule,

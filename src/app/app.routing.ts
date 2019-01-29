@@ -7,6 +7,7 @@ import {EmpleadosComponent} from "./empleados/empleados.component";
 import {FrutaComponent} from "./fruta/fruta.component";
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CochesComponent } from "./coches/coches.component";
 
 const appRoutes:Routes = [
   {path: 'inicio', component: InicioComponent},
@@ -14,6 +15,7 @@ const appRoutes:Routes = [
   {path: 'empleado', component: EmpleadosComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'contacto/:page', component: ContactoComponent},
+  {path: 'coches', component: CochesComponent},
 
   // Ruta vacia o error 404
   {path: '', component: InicioComponent},

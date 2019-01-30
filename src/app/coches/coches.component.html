@@ -33,4 +33,12 @@
   </ul>
 </div>
 
+<div>
+  <h3>Listado de articulos</h3>
+  <ul *ngIf="Articulos">
+    <li *ngFor="let articulo of Articulos">{{articulo.id}} - {{articulo.title}}</li>
+  </ul>
+  <p *ngIf="!Articulos">Loading...</p>
+</div>
+
 

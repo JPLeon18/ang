@@ -1,0 +1,18 @@
+<p>{{titulo}}</p>
+
+
+<div *ngIf="administrador; then admin else noAdmin"></div>
+
+<ng-template #admin>
+  <button *ngIf="administrador" (click)="cambiarValor(false)">Cambiar a False</button>
+  <p>Eres Administrador</p>
+</ng-template>
+
+
+
+<ng-template #noAdmin>
+  <button (click)="cambiarValor(true)">Cambiar a True</button>
+  <p>No Eres Administrador</p>
+</ng-template>
+
+
